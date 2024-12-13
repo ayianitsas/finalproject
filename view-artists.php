@@ -1,12 +1,12 @@
 <h1><strong>Artists</strong></h1>
 <div class="table-responsive">
-  <table class="table" style="width:100%; border-collapse: collapse;">
+  <table style="width:100%; border-collapse: collapse;">
     <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
       <tr>
         <th><b>ID</b></th>
         <th><b>Name</b></th>
         <th><b>Genre</b></th>
-        <th><b>Click here to view artist labels!</b></th>
+        <th><b>Click here to view labels!</b></th>
       </tr>
     </thead>
     <tbody style="background-color: #716969; color: black;">
@@ -25,4 +25,5 @@
     </tbody>
   </table>
 </div>
+
 
