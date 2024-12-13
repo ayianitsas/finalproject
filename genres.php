@@ -1,6 +1,8 @@
 <?php
 require_once("connection-db.php");
 require_once("model-genres.php");
+require_once("model-labels-chart-db.php");
+
 
 $pageTitle = "Genres";
 include "view-header.php";
@@ -36,6 +38,7 @@ if (isset($_POST['actionType'])) {
 
 
 $genres = selectGenres();
+include "view-labels-chart.php";
 include "view-genres.php";
 include "view-footer.php";
 ?>
