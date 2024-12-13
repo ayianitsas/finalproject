@@ -54,13 +54,6 @@
 </nav>
 
 
- <body style="margin:0; padding:0;">
-  <nav class="navbar navbar-expand-lg" style="margin-bottom:0; background: linear-gradient(to right, #e91e63, #2196F3);">
-    <div class="container-fluid">
-
-    </div>
-  </nav>
-
-  <header style="margin:0; padding:20px; text-align:center; background-image: linear-gradient(to right, #716969);">
-  </header>
-</body>
+ <header>
+    <nav class="navbar navbar-expand-lg" style="margin-bottom:0; background: linear-gradient(to right, #e91e63, #2196F3);">
+ </header>
