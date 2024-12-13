@@ -1,4 +1,4 @@
-<h1>Artists</h1>
+<h1><strong>Artists</strong></h1>
 <div class="table-responsive">
   <table class="table">
 
@@ -12,7 +12,9 @@
     </tr>
   </thead>
     <tbody>
-          <table style="background-color: #716969; color: black; width: 100%; border-collapse: collapse;">
+          <table style="background-color: linear-gradient(to right, #e91e63, #2196F3); color: black; width: 100%; border-collapse: collapse;">
+
+        
 <?php
 while ($artist = $artists->fetch_assoc()) {
 ?>
