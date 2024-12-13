@@ -2,11 +2,11 @@
 <div class="table-responsive">
   <table class="table">
 
-    <table style="background-color: #716969; color: black; border-collapse: collapse; width: 100%;">
+    <table style="background-color: linear-gradient(to right, #e91e63, #2196F3); color: black; border-collapse: collapse; width: 100%;">
 
   <thead>
     <tr>
-    <the><b>ID</b></th>
+    <th><b>ID</b></th>
     <th><b>Name</b></th>
     <th><b>Genre</b></th>
     </tr>
