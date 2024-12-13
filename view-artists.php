@@ -34,7 +34,7 @@ include "view-artists-newform.php";
     </td>
     </tr>
    <?php
-   }
+   
    ?>
  
     </tbody>
