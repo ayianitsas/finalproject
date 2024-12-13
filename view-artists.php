@@ -15,29 +15,53 @@ include "view-artists-newform.php";
         <th><b>ID</b></th>
         <th><b>Name</b></th>
         <th><b>Genre</b></th>
+        <th><b>Click here to view labels!</b></th>
         <th></th>
         <th></th>
+        <th></th>
+
+
       </tr>
     </thead>
     <tbody style="background-color: #484343; color: black;">
+      <?php
+      while ($artist = $artists->fetch_assoc()) {
+      ?>
 
-            
-<?php
-while ($artist = $artists->fetch_assoc()) {
-?>
-  <tr>
-    <td><?php echo $artist['artist_id']; ?></td>
-    <td><?php echo $artist['artist_name']; ?></td>
-    <td><?php echo $artist['artist_genre']; ?></td>
-    <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
-  </tr>
-<?php
-include "view-artists-editform.php";
-?>
-      
- </td>
-    <td>
-      <form method="post" action="">
+
+
+        <tr> 
+         <b>
+          <td><?php echo $artist['artist_id']; ?></td>
+          <td><?php echo $artist['artist_name']; ?></td>
+          <td><?php echo $artist['artist_genre']; ?></td>
+
+
+
+          <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a>
+
+
+        <td id="hidelabels">
+          <div id="jsfunction1" class="section">
+            <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
+          </div>    
+
+              <td id="hidelabels2">
+          <div id="jsfunction2" class="section">
+            <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
+          </div>    
+
+         </td>
+        </b>
+        <td>
+
+
+      <?php
+      include "view-artists-editform.php";
+      ?>
+        </td>
+        <td>
+           <form method="post" action="">
         <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
@@ -47,16 +71,6 @@ include "view-artists-editform.php";
         </button>
       </form>
     </td>
-   
-  </tr>
-<?php
-}
-?>
-      
-    </tbody>
-  </table>
-</div>
-
-    </tbody>
-  </table>
-</div>
+    </tr>
+   <?php
+   }
