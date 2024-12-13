@@ -27,7 +27,7 @@
 </div>
 
  <header
-    style="background-image: linear-gradient(to right, #716969); padding: 20px; text-align: center;">
+   <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat; padding:100px 20px; text-align:center;">
       
  </header>
 
