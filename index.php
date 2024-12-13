@@ -3,7 +3,7 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 
-<body style="margin:0; padding:0; background-color:#493336; font-family:Arial, sans-serif; color:#fff;">
+<body style="margin:0; padding:0; background-color:#4E4344; font-family:Arial, sans-serif; color:#fff;">
 
     <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/music-background.jpg') center/cover no-repeat; padding:100px 20px; text-align:center;">
         <h1 style="margin:0; font-weight: bold; font-size:48px;">Music Entertainment</h1>
@@ -22,7 +22,7 @@ include "view-header.php";
     </header>
     
    
-    <section style="padding:60px 20px; text-align:center; background:#615455;">
+    <section style="padding:60px 20px; text-align:center; background:#716969;">
         <h2 style="font-size:32px; margin-bottom:40px;">Organize, Discover & Explore</h2>
         <div style="display:flex; flex-wrap:wrap; justify-content:center; max-width:1000px; margin:0 auto;">
             
