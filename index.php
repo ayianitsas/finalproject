@@ -15,7 +15,7 @@ include "view-header.php";
            style="display:inline-block; margin:10px; padding:15px 30px; background:#e91e63; color:#fff; text-decoration:none; border-radius:4px; font-weight:bold;">
            Get Started
         </a>
-        <a href="browse.php" 
+        <a href="albums.php" 
            style="display:inline-block; margin:10px; padding:15px 30px; background:#2196F3; color:#fff; text-decoration:none; border-radius:4px; font-weight:bold;">
            Browse Music
         </a>
