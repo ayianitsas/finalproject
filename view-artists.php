@@ -38,7 +38,7 @@ include "view-artists-newform.php";
 
           <td>
           <div id="jsfunction1" class="section">
-            <button class="btn btn-primary" type="button" onclick="document.getElementById('demo4').style.display='none'">Hide</button>
+            <button class="btn btn-primary" type="button" onclick="document.getElementById('artist_id').style.display='none'">Hide</button>
         </div>
          </td>
 
