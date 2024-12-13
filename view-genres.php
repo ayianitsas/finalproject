@@ -1,35 +1,30 @@
 <div class="row">
   <div class="col">
-<h1>Genres</h1>
-  </div>
+<h1><strong>Genres</strong></h1>
+      </div>
   <div class="col-auto">
 <?php
 include "view-genres-newform.php";
 ?>
-
   </div>
 </div>
-
 <div class="table-responsive">
-  <table class="table">
-      <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
+  <table style="width:100%; border-collapse: collapse;">
+    <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
+      <tr>
+        <th><b>ID</b></th>
+        <th><b>Genre</b></th>
+        <th><b>Popular Year</b></th>
+        <th></th>
+        <th></th>
+        <th></th>
+ 
 
+      </tr>
+    </thead>
+    <tbody style="background-color: #484343; color: black;">
 
-
-  <thead>
-    <tr>
-    <th><strong>ID</strong></th>
-    <th><strong>Genre</strong></th>
-    <th><strong>Popular Year</strong></th>
-      <th></th>
-      <th></th>
-      <th></th>
-
-
-    </tr>
-  </thead>
-    <tbody>
-      <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
+        
 <?php
 while ($genre = $genres->fetch_assoc()) {
 ?>
