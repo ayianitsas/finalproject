@@ -30,7 +30,7 @@ include "view-header.php";
                 <img src="icons/favorites.svg" alt="Favorites Icon" style="width:60px; margin-bottom:10px;">
                 <h3 style="font-size:20px; margin:10px 0;">Organize Your Favorites</h3>
                 <p style="font-size:14px; line-height:1.5;">
-                    Create custom playlists, bookmark your go-to artists, and track the genres you love.
+                    Bookmark your go-to artists and track the genres you love.
                 </p>
             </div>
             
@@ -50,13 +50,6 @@ include "view-header.php";
                 </p>
             </div>
             
-            <div style="flex:1; min-width:200px; max-width:250px; margin:20px;">
-                <img src="icons/share.svg" alt="Share Icon" style="width:60px; margin-bottom:10px;">
-                <h3 style="font-size:20px; margin:10px 0;">Share & Connect</h3>
-                <p style="font-size:14px; line-height:1.5;">
-                    Showcase your collections, compare playlists, and bond with friends over music.
-                </p>
-            </div>
             
         </div>
     </section>
