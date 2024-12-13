@@ -5,7 +5,7 @@ include "view-header.php";
 
 <body style="margin:0; padding:0; background-color:#484343; font-family:Arial, sans-serif; color:#fff;">
 
-    <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/music-background.jpg') center/cover no-repeat; padding:100px 20px; text-align:center;">
+    <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat; padding:100px 20px; text-align:center;">
         <h1 style="margin:0; font-weight: bold; font-size:48px;">Music Entertainment</h1>
         <p style="margin:20px 0; font-size:20px; font-weight:300;">Your Music, Your Way</p>
         <p style="font-size:16px; max-width:500px; margin:0 auto 40px auto;">
