@@ -5,19 +5,13 @@
   <div class="col-auto">
 <?php
 include "view-artists-with-labels-newform.php";
-
-
 ?>
   </div>
 </div>
   <div class="card-group">
-
-
-    
   <div class="card-group">
     <?php while ($artist = $artists->fetch_assoc()) { ?>
   <div class="card m-2">
-        <!-- Card Header with Gradient -->
   <div class="card-header" style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;"> </div>
      <div class="card-body" style="background-color: #e91e63; color: black;">
       <h5 class="card-title"><?php echo $artist['artist_name']; ?></h5>
@@ -42,7 +36,7 @@ include "view-artists-with-labels-newform.php";
  
     
       <form method="post" action="">
-        <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
+        <input type="hidden" name="cid" value="<?php echo $artist['artist_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
@@ -60,26 +54,10 @@ include "view-artists-with-labels-newform.php";
       </p>
       <p class="card-text"><small class="text-body-secondary">Genre: <?php echo $artist['artist_genre']; ?></small></p>
     </div>
-  </div>
-
-
-
-        
+  </div>   
    </td> 
-  
-
-
-
   </tr> 
- 
 
 <?php
 }
 ?>
-
-
-
-
-
-          
-        
