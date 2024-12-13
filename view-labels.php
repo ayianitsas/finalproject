@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h1>Labels</h1>
+    <h1><strong>Lbaels</strong></h1>
   </div>
   <div class="col-auto">
 <?php
@@ -9,19 +9,19 @@ include "view-labels-newform.php";
   </div>
 </div>
 <div class="table-responsive">
-  <table class="table">
-     <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-    <th><b>ID</b></th>
-    <th><b>Name</b></th>
-    <th><b>Year Established</b></th>
+  <table style="width:100%; border-collapse: collapse;">
+    <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
+      <tr>
+      <th><b>ID</b></th>
+      <th><b>Name</b></th>
+      <th><b>Year Established</b></th>
       <th></th>
       <th></th>
       <th></th>
-    </tr>
-  </thead>
-    <tbody>
+      </tr>
+    </thead>
+    <tbody style="background-color: #484343; color: black;">
+
 <?php
 while ($label = $labels->fetch_assoc()) {
 ?>
