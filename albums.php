@@ -1,7 +1,7 @@
 <?php
 require_once("connection-db.php");
 require_once("model-albums.php");
-require_once("model-albums-chart-db.php");
+
 
 $pageTitle = "Albums";
 include "view-header.php";
@@ -35,7 +35,6 @@ if (isset($_POST['actionType'])) {
 
 
 $albums = selectAlbums();
-include "view-artists-chart.php";
 include "view-albums.php";
 include "view-footer.php";
 ?>
