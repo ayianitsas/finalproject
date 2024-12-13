@@ -1,5 +1,5 @@
  <header
-   <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat; padding:50px 10px; text-align:center;">   
+   <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat; padding:25px 5px; text-align:center;">   
  </header>
 
 <h1><strong>Artists</strong></h1>
@@ -18,10 +18,12 @@
       while ($artist = $artists->fetch_assoc()) {
       ?>
         <tr>
+         <b>
           <td><?php echo $artist['artist_id']; ?></td>
           <td><?php echo $artist['artist_name']; ?></td>
           <td><?php echo $artist['artist_genre']; ?></td>
           <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
+        </b>
         </tr>
       <?php
       }
