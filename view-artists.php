@@ -1,6 +1,4 @@
 <body style="margin:0; padding:0;">
-  <nav class="navbar navbar-expand-lg" style="margin-bottom:0;">
-  </nav>
   <header style="margin:0; padding:25px 5px; text-align:center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat;">
   </header>
 </body>
