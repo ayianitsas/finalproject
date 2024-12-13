@@ -1,13 +1,11 @@
 <h1 style="text-align: center; color: white; margin-top: 40px;">Labels: Year Established</h1>
 
-<!-- Chart Container: Centered, Larger Size, White Border -->
 <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
   <div style="width: 600px; height: 600px; border: 2px solid white; padding: 20px; box-sizing: border-box; background-color: #716969;">
     <canvas id="myChart"></canvas>
   </div>
 </div>
 
-<!-- Include Chart.js Library -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <?php
@@ -16,15 +14,12 @@ $labelNames = [];
 $dataPoints = [];
 
 while ($label = $labelsData->fetch_assoc()) {
-    // Extract and sanitize the year
     $yearStr = $label['label_yearestablished']; 
     $year = (int) filter_var($yearStr, FILTER_SANITIZE_NUMBER_INT);
     
-    // Extract label name
     $labelName = $label['label_name'];
     $labelNames[] = $labelName;
     
-    // Prepare data points for Chart.js
     $dataPoints[] = [
         'x' => $labelName,
         'y' => $year
@@ -36,80 +31,80 @@ while ($label = $labelsData->fetch_assoc()) {
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
-  type: 'scatter', // Chart Type
+  type: 'scatter', 
   data: {
-    labels: <?php echo json_encode($labelNames); ?>, // X-Axis Labels
+    labels: <?php echo json_encode($labelNames); ?>,
     datasets: [{
-      label: 'Year Established', // Dataset Label
-      data: <?php echo json_encode($dataPoints); ?>, // Data Points
-      backgroundColor: 'rgba(255, 255, 255, 0.7)', // White Points with Transparency
-      borderColor: 'white', // White Borders for Points
-      borderWidth: 2, // Thickness of Borders
-      pointRadius: 8, // Size of Points
-      pointHoverRadius: 10, // Size on Hover
-      pointBackgroundColor: 'white', // White Fill for Points
-      pointBorderColor: 'white' // White Border for Points
+      label: 'Year Established', 
+      data: <?php echo json_encode($dataPoints); ?>,
+      backgroundColor: 'rgba(255, 255, 255, 0.7)', 
+      borderColor: 'white', 
+      borderWidth: 2, 
+      pointRadius: 8, 
+      pointHoverRadius: 10, 
+      pointBackgroundColor: 'white', 
+      pointBorderColor: 'white' 
     }]
   },
   options: {
-    responsive: true, // Make Chart Responsive
-    maintainAspectRatio: false, // Allow Custom Aspect Ratio
+    responsive: true, 
+    maintainAspectRatio: false, 
     plugins: {
       legend: {
         labels: {
-          color: 'white', // White Legend Text
+          color: 'white', 
           font: {
-            size: 16 // Legend Font Size
+            size: 16 
           }
         },
-        display: true, // Show Legend
+        display: true, 
       },
       tooltip: {
         callbacks: {
           title: function(context) {
-            return context[0].label; // Tooltip Title
+            return context[0].label; 
           },
           label: function(context) {
-            return 'Year: ' + context.parsed.y; // Tooltip Label
+            return 'Year: ' + context.parsed.y; 
           }
         },
-        titleColor: 'white', // Tooltip Title Text Color
-        bodyColor: 'white', // Tooltip Body Text Color
-        backgroundColor: 'rgba(0, 0, 0, 0.7)', // Tooltip Background Color
-        borderColor: 'white', // Tooltip Border Color
-        borderWidth: 1, // Tooltip Border Thickness
+        titleColor: 'white', 
+        bodyColor: 'white', 
+        backgroundColor: 'rgba(0, 0, 0, 0.7)', 
+        borderColor: 'white', 
+        borderWidth: 1, 
       }
     },
     scales: {
       x: {
-        type: 'category', // X-Axis Type
-        labels: <?php echo json_encode($labelNames); ?>, // X-Axis Labels
+        type: 'category', 
+        labels: <?php echo json_encode($labelNames); ?>, 
         ticks: {
-          color: 'white', // X-Axis Tick Color
+          color: 'white', 
           font: {
-            size: 14 // X-Axis Tick Font Size
+            size: 14 
           },
-          autoSkip: false, // Show All Labels
+          autoSkip: false, 
         },
         grid: {
-          color: 'white', // X-Axis Grid Line Color
-          borderColor: 'white', // X-Axis Border Line Color
+          color: 'white', 
+          borderColor: 'white', 
         }
       },
       y: {
-        beginAtZero: false, // Y-Axis Does Not Start at Zero
+        beginAtZero: false, 
         ticks: {
-          color: 'white', // Y-Axis Tick Color
+          color: 'white', 
           font: {
-            size: 14 // Y-Axis Tick Font Size
+            size: 14 
           },
           callback: function(value, index, values) {
-            return value.toString(); // Return the value as a plain string without formatting
+            return value.toString(); 
           }
         },
         grid: {
-          color: 'white', // Y-Axis Grid Line Color
-          borderColor: 'white', // Y-Axis Border Line Color
+          color: 'white', 
+          borderColor: 'white', 
         }
       }
     }
