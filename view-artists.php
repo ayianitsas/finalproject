@@ -48,9 +48,6 @@ include "view-artists-editform.php";
     </td>
    
   </tr>
-<?php
-}
-?>
       
     </tbody>
   </table>
