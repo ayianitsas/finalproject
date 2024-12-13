@@ -30,6 +30,7 @@ include "view-artists-newform.php";
 
         <tr> 
          <b>
+          <tr id="row-<?php echo $artist['artist_id']; ?>">
           <td><?php echo $artist['artist_id']; ?></td>
           <td><?php echo $artist['artist_name']; ?></td>
           <td><?php echo $artist['artist_genre']; ?></td>
