@@ -1,10 +1,10 @@
-<strong>Artists</strong>
+<h1><strong>Artists</strong></h1>
 <div class="table-responsive">
   <table class="table">
 
     <style>
     <table style="background-color: linear-gradient(to right, #e91e63, #2196F3); color: black; border-collapse: collapse; width: 100%;">
-      </style>
+      
 
   <thead>
     <tr>
@@ -15,7 +15,7 @@
   </thead>
     <tbody>
       
-      <style>
+    
           <table style="background-color: linear-gradient(to right, #e91e63, #2196F3); color: black; width: 100%; border-collapse: collapse;">
         </style>
 
