@@ -1,5 +1,5 @@
 <?php
-require_once("connection.php");
+require_once("connection-db.php");
 require_once("model-labels-chart-db.php");
 
 $pageTitle = "Labels Chart";
