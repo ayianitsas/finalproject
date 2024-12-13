@@ -34,21 +34,21 @@ function selectLabelsForArtists($aid) {
 
 function selectArtistsForInput() {
     try {
-        $conn = get_db_connection(); // Ensure this returns a valid database connection
-        $stmt = $conn->prepare("SELECT artist_id, artist_name FROM `artist` ORDER BY artist_name"); // Fixed SQL syntax
+        $conn = get_db_connection(); 
+        $stmt = $conn->prepare("SELECT artist_id, artist_name FROM `artist` ORDER BY artist_name"); 
 
         $stmt->execute();
         $result = $stmt->get_result();
-        $stmt->close(); // Close statement
-        $conn->close(); // Close the database connection
+        $stmt->close(); 
+        $conn->close(); 
 
         return $result;
     } catch (Exception $e) {
-        // Safely close the connection if it was opened
+       
         if (isset($conn) && $conn->ping()) {
             $conn->close();
         }
-        // Rethrow the exception for debugging/logging purposes
+    
         throw $e;
     }
 }
