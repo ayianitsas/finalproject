@@ -1,5 +1,5 @@
 <?php
-require_once("util-db.php");
+require_once("connection-db.php");
 require_once("model-albums.php");
 
 $pageTitle = "Albums";
