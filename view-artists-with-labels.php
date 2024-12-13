@@ -5,6 +5,8 @@
   <div class="col-auto">
 <?php
 include "view-artists-with-labels-newform.php";
+include "path/to/view-artists-input-list.php";
+
 ?>
   </div>
 </div>
