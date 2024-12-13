@@ -14,4 +14,21 @@ function selectAlbumsByLabel($cid) {
         throw $e;
     }
 }
+
+
+function insertAlbumsByLabel($title, $year) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `albums` (`title`, `year`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $title, $year);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
 ?>
