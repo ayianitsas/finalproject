@@ -8,7 +8,7 @@
 
 <style>
   .navbar {
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(to #e91e63, );
   }
   body {
     background-color: #CDACB1;
