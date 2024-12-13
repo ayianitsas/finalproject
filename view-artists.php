@@ -1,3 +1,7 @@
+ <header
+   <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat; padding:50px 10px; text-align:center;">   
+ </header>
+
 <h1><strong>Artists</strong></h1>
 <div class="table-responsive">
   <table style="width:100%; border-collapse: collapse;">
@@ -26,9 +30,5 @@
   </table>
 </div>
 
- <header
-   <header style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat; padding:100px 20px; text-align:center;">
-      
- </header>
 
 
