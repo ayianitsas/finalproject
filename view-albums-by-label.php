@@ -12,9 +12,7 @@ include "view-albums-by-label-newform.php";
   <table style="width:100%; border-collapse: collapse;">
     <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
       <tr>
-       <th><b>ID</b></th>
-      <th><b>Name</b></th>
-      <th><b>Year Established</b></th>
+     
       <th><b>Album Title</b></th>
       <th><b>Year</b></th>
       <th></th>
