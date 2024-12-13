@@ -1,4 +1,3 @@
-<!-- Heading: Centered and White Text -->
 <h1 style="text-align: center; color: white; margin-top: 40px;">Labels: Year Established</h1>
 
 <!-- Chart Container: Centered, Larger Size, White Border -->
@@ -12,7 +11,6 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <?php
-// Fetch Labels Data from Database
 $labelsData = selectLabels();
 $labelNames = [];
 $dataPoints = [];
@@ -35,10 +33,8 @@ while ($label = $labelsData->fetch_assoc()) {
 ?>
 
 <script>
-// Get the Canvas Element
 const ctx = document.getElementById('myChart');
 
-// Create a New Chart Instance
 new Chart(ctx, {
   type: 'scatter', // Chart Type
   data: {
@@ -107,6 +103,9 @@ new Chart(ctx, {
           font: {
             size: 14 // Y-Axis Tick Font Size
           },
+          callback: function(value, index, values) {
+            return value.toString(); // Return the value as a plain string without formatting
+          }
         },
         grid: {
           color: 'white', // Y-Axis Grid Line Color
@@ -117,4 +116,3 @@ new Chart(ctx, {
   }
 });
 </script>
-
