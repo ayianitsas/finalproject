@@ -11,18 +11,32 @@ include "view-artists-newform.php";
 <div class="table-responsive">
   <table style="width:100%; border-collapse: collapse;">
     <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
+      <tr>
+        <th><b>ID</b></th>
+        <th><b>Name</b></th>
+        <th><b>Genre</b></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody style="background-color: #484343; color: black;">
 
-          <td><?php echo $artist['artist_genre']; ?></td>
-          <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
-        </b>
-        </tr>
-        <td>
-      <?php
-      include "view-artists-editform.php";
-      ?>
-        </td>
-        <td>
-           <form method="post" action="">
+            
+<?php
+while ($artist = $artists->fetch_assoc()) {
+?>
+  <tr>
+    <td><?php echo $artist['artist_id']; ?></td>
+    <td><?php echo $artist['artist_name']; ?></td>
+    <td><?php echo $artist['artist_genre']; ?></td>
+    <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
+  </tr>
+<?php
+include "view-artists-editform.php";
+?>
+      
+ </td>
+    <td>
+      <form method="post" action="">
         <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
@@ -32,11 +46,12 @@ include "view-artists-newform.php";
         </button>
       </form>
     </td>
-    </tr>
-   <?php
    
-   ?>
- 
+  </tr>
+<?php
+}
+?>
+      
     </tbody>
   </table>
 </div>
