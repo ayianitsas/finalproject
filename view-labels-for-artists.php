@@ -3,9 +3,9 @@
   <table style="width:100%; border-collapse: collapse;">
     <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
       <tr>
-    <the><b>ID</b></th>
-    <the><b>Name</b></th>
-    <the><b>Year Established</b></th>
+    <th><b>ID</b></th>
+    <th><b>Name</b></th>
+    <th><b>Year Established</b></th>
       </tr>
     </thead>
     <tbody style="background-color: #484343; color: black;">
