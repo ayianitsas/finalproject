@@ -27,29 +27,22 @@ include "view-header.php";
         <div style="display:flex; flex-wrap:wrap; justify-content:center; max-width:1000px; margin:0 auto;">
             
             <div style="flex:1; min-width:200px; max-width:250px; margin:20px;">
-                <img src="icons/favorites.svg" alt="Favorites Icon" style="width:60px; margin-bottom:10px;">
+                <img src="https://www.svgrepo.com/show/456453/music-folder.svg" alt="Favorites Icon" style="width:60px; margin-bottom:10px;">
                 <h3 style="font-size:20px; margin:10px 0;"><strong>Organize Your Favorites</strong></h3>
                 <p style="font-size:14px; line-height:1.5;">
-                    <b>Bookmark your go-to artists and track the genres you love.</b>
+                    <b>Document and learn more about your go-to artists.</b>
                 </p>
             </div>
             
             <div style="flex:1; min-width:200px; max-width:250px; margin:20px;">
-                <img src="icons/discover.svg" alt="Discover Icon" style="width:60px; margin-bottom:10px;">
-                <h3 style="font-size:20px; margin:10px 0;"><strong>Discover New Artists & Genres</strong></h3>
+                <img src="https://www.svgrepo.com/show/13240/music-disc.svg" alt="Discover Icon" style="width:60px; margin-bottom:10px;">
+                <h3 style="font-size:20px; margin:10px 0;"><strong>Discover New Music & Genres</strong></h3>
                 <p style="font-size:14px; line-height:1.5;">
-                    <b>Explore fresh talent, trending genres, and broaden your musical horizons.</b>
+                    <b>Explore new album releases and trending genres.</b>
                 </p>
             </div>
             
-            <div style="flex:1; min-width:200px; max-width:250px; margin:20px;">
-                <img src="icons/calendar.svg" alt="Calendar Icon" style="width:60px; margin-bottom:10px;">
-                <h3 style="font-size:20px; margin:10px 0;">Track Releases & Shows</h3>
-                <p style="font-size:14px; line-height:1.5;">
-                    <b>Stay updated with new album drops and never miss your favorite artists’ next live gig.</b>
-                </p>
-            </div>
-            
+        
             
         </div>
     </section>
