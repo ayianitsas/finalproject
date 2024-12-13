@@ -8,7 +8,7 @@
 
 <style>
   .navbar {
-    background: linear-gradient(to #e91e63, #2196F3);
+    background: linear-gradient(to right, #e91e63, #2196F3);
   }
   body {
     background-color: #CDACB1;
@@ -18,7 +18,7 @@
   </head>
   <body>
 
-  
+
 
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
