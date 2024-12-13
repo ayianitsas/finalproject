@@ -17,7 +17,7 @@ include "view-genres-newform.php";
         <th><b>Popular Year</b></th>
         <th></th>
         <th></th>
-        <th></th>
+     
  
 
       </tr>
