@@ -16,6 +16,7 @@ include "view-artists-newform.php";
         <th><b>Name</b></th>
         <th><b>Genre</b></th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody style="background-color: #484343; color: black;">
@@ -48,7 +49,14 @@ include "view-artists-editform.php";
     </td>
    
   </tr>
+<?php
+}
+?>
       
+    </tbody>
+  </table>
+</div>
+
     </tbody>
   </table>
 </div>
