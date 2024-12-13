@@ -19,7 +19,7 @@ include "view-artists-newform.php";
         <th></th>
         <th></th>
         <th></th>
-        <th></th>
+
       </tr>
     </thead>
     <tbody style="background-color: #484343; color: black;">
@@ -30,7 +30,7 @@ include "view-artists-newform.php";
           <td><b><?php echo $artist['artist_id']; ?></b></td>
           <td><b><?php echo $artist['artist_name']; ?></b></td>
           <td><b><?php echo $artist['artist_genre']; ?></b></td>
-          <td id="labels-cell-<?php echo $artist['artist_id']; ?>">
+          
             <a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a>
           </td>
           <td>
