@@ -6,24 +6,23 @@
         <th><b>ID</b></th>
         <th><b>Name</b></th>
         <th><b>Genre</b></th>
+        <th><b>Labels</b></th>
       </tr>
     </thead>
     <tbody style="background-color: #716969; color: black;">
-
-        
-<?php
-while ($artist = $artists->fetch_assoc()) {
-?>
-  <tr>
-    <td><?php echo $artist['artist_id']; ?></td>
-    <td><?php echo $artist['artist_name']; ?></td>
-    <td><?php echo $artist['artist_genre']; ?></td>
-    <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
-  </tr>
-<?php
-}
-?>
-      
+      <?php
+      while ($artist = $artists->fetch_assoc()) {
+      ?>
+        <tr>
+          <td><?php echo $artist['artist_id']; ?></td>
+          <td><?php echo $artist['artist_name']; ?></td>
+          <td><?php echo $artist['artist_genre']; ?></td>
+          <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
+        </tr>
+      <?php
+      }
+      ?>
     </tbody>
   </table>
 </div>
+
