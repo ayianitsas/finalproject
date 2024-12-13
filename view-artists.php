@@ -40,12 +40,14 @@ include "view-artists-newform.php";
           <td>
 
 
-             <div class="section">
+             <div id="function1" class="section">
+            <p id="artist_id">Hide Artist</p>
               <button class="btn btn-primary" type="button" onclick="document.getElementById('row-<?php echo $artist['artist_id']; ?>').style.display='none'">Hide
               </button>
             </div>
           </td>
           <td>
+
 
         
       <?php
