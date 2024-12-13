@@ -9,7 +9,7 @@
         <th><b>Click here to view labels!</b></th>
       </tr>
     </thead>
-    <tbody style="background-color: #716969; color: black;">
+    <tbody style="background-color: #484343; color: black;">
       <?php
       while ($artist = $artists->fetch_assoc()) {
       ?>
