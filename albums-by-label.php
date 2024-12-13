@@ -18,7 +18,7 @@ if (isset($_POST['actionType'])) {
 }
 
 
-$albums = selectAlbumsByLabel();
+$albums = selectAlbumsByLabel('$cid');
 include "view-albums-by-label.php";
 include "view-footer.php";
 ?>
