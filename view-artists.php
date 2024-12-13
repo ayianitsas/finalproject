@@ -6,7 +6,7 @@
         <th><b>ID</b></th>
         <th><b>Name</b></th>
         <th><b>Genre</b></th>
-        <th><b>Labels</b></th>
+        <th><b>Click here to view artist labels!</b></th>
       </tr>
     </thead>
     <tbody style="background-color: #716969; color: black;">
