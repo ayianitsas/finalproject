@@ -26,20 +26,29 @@ include "view-artists-newform.php";
       <?php
       while ($artist = $artists->fetch_assoc()) {
       ?>
-        <tr>
-          <td><b><?php echo $artist['artist_id']; ?></b></td>
-          <td><b><?php echo $artist['artist_name']; ?></b></td>
-          <td><b><?php echo $artist['artist_genre']; ?></b></td>
-          
-            <a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a>
-          </td>
+
+
+      
+        <tr> 
+         <b>
+          <td><?php echo $artist['artist_id']; ?></td>
+          <td><?php echo $artist['artist_name']; ?></td>
+          <td><?php echo $artist['artist_genre']; ?></td>
+          <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a></td>
+
           <td>
-            <button class="btn btn-primary" type="button" onclick="document.getElementById('labels-cell-<?php echo $artist['artist_id']; ?>').style.display='none'">Hide</button>
-          </td>
-        </tr>
+          <div id="jsfunction1" class="section">
+            <button class="btn btn-primary" type="button" onclick="document.getElementById('demo4').style.display='none'">Hide</button>
+        </div>
+         </td>
 
         </b>
         <td>
+
+
+
+
+          
       <?php
       include "view-artists-editform.php";
       ?>
