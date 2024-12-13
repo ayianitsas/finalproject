@@ -1,21 +1,30 @@
-<h1>Artists</h1>
+<div class="row">
+  <div class="col">
+<h1><strong>Artists</strong></h1>
+      </div>
+  <div class="col-auto">
+<?php
+include "view-albums-newform.php";
+?>
+  </div>
+</div>
 <div class="table-responsive">
-  <table class="table">
+  <table style="width:100%; border-collapse: collapse;">
+    <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
+      <tr>
+        <th><b>ID</b></th>
+        <th><b>Name</b></th>
+        <th><b>Genre</b></th>
+        <th></th>
+        <th></th>
+ 
+ 
 
-    <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
+      </tr>
+    </thead>
+    <tbody style="background-color: #484343; color: black;">
 
-  <thead>
-    <tr>
-    <th><strong>ID</strong></th>
-    <th><strong>Name</strong></th>
-    <th><strong>Genre</strong></th>
-
-
-      
-    </tr>
-  </thead>
-    <tbody>
-          <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
+            
 <?php
 while ($artist = $artists->fetch_assoc()) {
 ?>
