@@ -1,16 +1,17 @@
-<h1>Albums by Label</h1>
+<h1><strong>Albums by Label</strong></h1>
 <div class="table-responsive">
-  <table class="table">
-  <thead>
-    <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Year Established</th>
-    <th>Album Title</th>
-    <th>Year</th>
-    </tr>
-  </thead>
-    <tbody>
+  <table style="width:100%; border-collapse: collapse;">
+    <thead style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;">
+      <tr>
+       <th><b>ID</b></th>
+      <th><b>Name</b></th>
+      <th><b>Year Established</b></th>
+      <th><b>Album Title</b></th>
+      <th><b>Year</b></th>
+      </tr>
+    </thead>
+    <tbody style="background-color: #484343; color: black;">
+
 <?php
 while ($album = $albums->fetch_assoc()) {
 ?>
