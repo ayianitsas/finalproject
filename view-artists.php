@@ -2,7 +2,7 @@
 <div class="table-responsive">
   <table class="table">
 
-    <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
+    <table style="background-color: #716969; color: black; border-collapse: collapse; width: 100%;">
 
   <thead>
     <tr>
@@ -15,7 +15,7 @@
     </tr>
   </thead>
     <tbody>
-          <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
+          <table style="background-color: #716969; color: black; width: 100%; border-collapse: collapse;">
 <?php
 while ($artist = $artists->fetch_assoc()) {
 ?>
