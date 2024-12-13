@@ -19,7 +19,7 @@ include "view-artists-with-labels-newform.php";
   <div class="card m-2">
         <!-- Card Header with Gradient -->
   <div class="card-header" style="background: linear-gradient(to right, #e91e63, #2196F3); color: black;"> </div>
-     <div class="card-body" style="background-color: #716969; color: black;">
+     <div class="card-body" style="background-color: #e91e63; color: black;">
       <h5 class="card-title"><?php echo $artist['artist_name']; ?></h5>
       <p class="card-text">
       <ul class="list-group">
