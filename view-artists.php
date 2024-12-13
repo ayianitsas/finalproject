@@ -40,21 +40,14 @@ include "view-artists-newform.php";
           <td>
 
 
-
-    
-
-      
-
-               <td id="hidelabels">
-          <div id="jsfunction" class="section">
-            <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
-          </div>    
-
+             <div class="section">
+              <button class="btn btn-primary" type="button" onclick="document.getElementById('row-<?php echo $artist['artist_id']; ?>').style.display='none'">Hide
+              </button>
+            </div>
+          </td>
+          <td>
 
         
-       
-
-
       <?php
       include "view-artists-editform.php";
       ?>
