@@ -19,6 +19,8 @@ include "view-artists-newform.php";
         <th></th>
         <th></th>
         <th></th>
+        <th></th>
+        
 
 
       </tr>
@@ -41,13 +43,9 @@ include "view-artists-newform.php";
           <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a>
 
 
-        <td id="hidelabels">
-          <div id="jsfunction1" class="section">
-            <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
-          </div>    
 
-              <td id="hidelabels2">
-          <div id="jsfunction2" class="section">
+              <td id="hidelabels">
+          <div id="jsfunction" class="section">
             <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
           </div>    
 
