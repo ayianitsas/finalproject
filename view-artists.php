@@ -1,4 +1,4 @@
-<h1><strong>Artists</strong></h1>
+<strong>Artists</strong>
 <div class="table-responsive">
   <table class="table">
 
