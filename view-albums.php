@@ -17,7 +17,7 @@ include "view-albums-newform.php";
         <th><b>Year</b></th>
         <th></th>
         <th></th>
-        <th></th>
+ 
  
 
       </tr>
