@@ -46,11 +46,7 @@ include "view-artists-newform.php";
             <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
           </div>    
 
-              <td id="hidelabels2">
-          <div id="jsfunction2" class="section">
-            <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
-          </div>    
-
+    
             
          </td>
         </b>
