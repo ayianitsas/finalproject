@@ -17,14 +17,14 @@
       <div class="modal-body">
     <form method="post" action="">
         <div class="mb-3">
-            <label for="cName<?php echo $label['label_id']; ?>" class="form-label">Label Name</label>
-            <input type="text" class="form-control" id="cName<?php echo $label['label_id']; ?>" name="cName" value="<?php echo $label['label_name']; ?>">
+            <label for="aAName<?php echo $artist['artist_id']; ?>" class="form-label">Artist Name</label>
+            <input type="text" class="form-control" id="aAName<?php echo $artist['artist_id']; ?>" name="aAName" value="<?php echo $artist['artist_name']; ?>">
           </div>
         <div class="mb-3">
-            <label for="cYear<?php echo $label['label_id']; ?>" class="form-label">Year Established</label>
-            <input type="text" class="form-control" id="cYear<?php echo $label['label_id']; ?>" name="cYear" value="<?php echo $label['label_yearestablished']; ?>">
+            <label for="aGenre<?php echo $artist['artist_id']; ?>" class="form-label">Genre</label>
+            <input type="text" class="form-control" id="aGenre<?php echo $artist['artist_id']; ?>" name="aGenre" value="<?php echo $artist['artist_genre']; ?>">
           </div>
-             <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
+             <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
