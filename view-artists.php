@@ -18,7 +18,6 @@ include "view-artists-newform.php";
         </tr>
         <td>
       <?php
-      }
       include "view-artists-editform.php";
       ?>
         </td>
