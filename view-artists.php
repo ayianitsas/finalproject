@@ -19,7 +19,7 @@ include "view-artists-newform.php";
         <th></th>
         <th></th>
         <th></th>
-        <th></th>
+
 
       </tr>
     </thead>
