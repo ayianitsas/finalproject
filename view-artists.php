@@ -13,9 +13,10 @@
     <th><b>Genre</b></th>
     </tr>
   </thead>
-    <tbody>
+
+
       
-    
+    <tbody>
           <table style="background-color: linear-gradient(to right, #e91e63, #2196F3); color: black; width: 100%; border-collapse: collapse;">
         </style>
 
