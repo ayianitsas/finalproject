@@ -1,9 +1,3 @@
-<body style="margin:0; padding:0;">
-  <header style="margin:0; padding:30px 8px; text-align:center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://pbs.twimg.com/media/GF9wTFjacAADJ8G.jpg') center/cover no-repeat;">
-  </header>
-</body>
-
-
 <h1><strong>Artists</strong></h1>
 <div class="table-responsive">
   <table style="width:100%; border-collapse: collapse;">
