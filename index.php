@@ -9,7 +9,7 @@ include "view-header.php";
         <h1 style="margin:0; font-weight: bold; font-size:48px;">Music Entertainment</h1>
         <p style="margin:20px 0; font-size:20px; font-weight:300;"><b>Your Music, Your Way</b></p>
         <p style="font-size:16px; max-width:500px; margin:0 auto 40px auto;">
-            <b>Discover, organize, and explore the music you love—favorite artists, top genres, and beyond.</b>
+            <b>Explore the music you love— favorite artists, top genres, and beyond.</b>
         </p>
         <a href="artists.php" 
            style="display:inline-block; margin:10px; padding:15px 30px; background:#e91e63; color:#fff; text-decoration:none; border-radius:4px; font-weight:bold;">
