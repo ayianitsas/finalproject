@@ -35,17 +35,22 @@ include "view-artists-newform.php";
           <td><?php echo $artist['artist_genre']; ?></td>
 
           <td><a href="labels-for-artists.php?id=<?php echo $artist['artist_id']; ?>">Labels</a>
+          </td>
+          </b>
+          <td>
 
 
 
-          <td id="hidelabels">
-          <div id="jsfunction" class="section">
-            <button class="btn btn-primary" type="button" onclick="document.getElementById('hidelabels').style.display='none'">Hide</button>
-          </div>    
+    
 
-         </td>
-        </b>
-        <td>
+             <div class="section">
+              <button class="btn btn-primary" type="button" onclick="document.getElementById('row-<?php echo $artist['artist_id']; ?>').style.display='none'">Hide
+              </button>
+            </div>
+          </td>
+          <td>
+        
+       
 
 
       <?php
